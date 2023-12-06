@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C505F0582B20CDAB008E1F4B /* TicGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505F0572B20CDAB008E1F4B /* TicGameApp.swift */; };
+		C505F05A2B20CDAB008E1F4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505F0592B20CDAB008E1F4B /* ContentView.swift */; };
+		C505F05C2B20CDAD008E1F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C505F05B2B20CDAD008E1F4B /* Assets.xcassets */; };
+		C505F05F2B20CDAD008E1F4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C505F05E2B20CDAD008E1F4B /* Preview Assets.xcassets */; };
+		C505F0692B20CDAE008E1F4B /* TicGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505F0682B20CDAE008E1F4B /* TicGameTests.swift */; };
+		C505F0732B20CDAE008E1F4B /* TicGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505F0722B20CDAE008E1F4B /* TicGameUITests.swift */; };
+		C505F0752B20CDAE008E1F4B /* TicGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505F0742B20CDAE008E1F4B /* TicGameUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C505F0652B20CDAE008E1F4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C505F04C2B20CDAB008E1F4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C505F0532B20CDAB008E1F4B;
+			remoteInfo = TicGame;
+		};
+		C505F06F2B20CDAE008E1F4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C505F04C2B20CDAB008E1F4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C505F0532B20CDAB008E1F4B;
+			remoteInfo = TicGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C505F0542B20CDAB008E1F4B /* TicGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C505F0572B20CDAB008E1F4B /* TicGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicGameApp.swift; sourceTree = "<group>"; };
+		C505F0592B20CDAB008E1F4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C505F05B2B20CDAD008E1F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C505F05E2B20CDAD008E1F4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C505F0642B20CDAE008E1F4B /* TicGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C505F0682B20CDAE008E1F4B /* TicGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicGameTests.swift; sourceTree = "<group>"; };
+		C505F06E2B20CDAE008E1F4B /* TicGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C505F0722B20CDAE008E1F4B /* TicGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicGameUITests.swift; sourceTree = "<group>"; };
+		C505F0742B20CDAE008E1F4B /* TicGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C505F0512B20CDAB008E1F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C505F0612B20CDAE008E1F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C505F06B2B20CDAE008E1F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C505F04B2B20CDAB008E1F4B = {
+			isa = PBXGroup;
+			children = (
+				C505F0562B20CDAB008E1F4B /* TicGame */,
+				C505F0672B20CDAE008E1F4B /* TicGameTests */,
+				C505F0712B20CDAE008E1F4B /* TicGameUITests */,
+				C505F0552B20CDAB008E1F4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C505F0552B20CDAB008E1F4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C505F0542B20CDAB008E1F4B /* TicGame.app */,
+				C505F0642B20CDAE008E1F4B /* TicGameTests.xctest */,
+				C505F06E2B20CDAE008E1F4B /* TicGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C505F0562B20CDAB008E1F4B /* TicGame */ = {
+			isa = PBXGroup;
+			children = (
+				C505F0572B20CDAB008E1F4B /* TicGameApp.swift */,
+				C505F0592B20CDAB008E1F4B /* ContentView.swift */,
+				C505F05B2B20CDAD008E1F4B /* Assets.xcassets */,
+				C505F05D2B20CDAD008E1F4B /* Preview Content */,
+			);
+			path = TicGame;
+			sourceTree = "<group>";
+		};
+		C505F05D2B20CDAD008E1F4B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C505F05E2B20CDAD008E1F4B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C505F0672B20CDAE008E1F4B /* TicGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				C505F0682B20CDAE008E1F4B /* TicGameTests.swift */,
+			);
+			path = TicGameTests;
+			sourceTree = "<group>";
+		};
+		C505F0712B20CDAE008E1F4B /* TicGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C505F0722B20CDAE008E1F4B /* TicGameUITests.swift */,
+				C505F0742B20CDAE008E1F4B /* TicGameUITestsLaunchTests.swift */,
+			);
+			path = TicGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C505F0532B20CDAB008E1F4B /* TicGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C505F0782B20CDAE008E1F4B /* Build configuration list for PBXNativeTarget "TicGame" */;
+			buildPhases = (
+				C505F0502B20CDAB008E1F4B /* Sources */,
+				C505F0512B20CDAB008E1F4B /* Frameworks */,
+				C505F0522B20CDAB008E1F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TicGame;
+			productName = TicGame;
+			productReference = C505F0542B20CDAB008E1F4B /* TicGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C505F0632B20CDAE008E1F4B /* TicGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C505F07B2B20CDAE008E1F4B /* Build configuration list for PBXNativeTarget "TicGameTests" */;
+			buildPhases = (
+				C505F0602B20CDAE008E1F4B /* Sources */,
+				C505F0612B20CDAE008E1F4B /* Frameworks */,
+				C505F0622B20CDAE008E1F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C505F0662B20CDAE008E1F4B /* PBXTargetDependency */,
+			);
+			name = TicGameTests;
+			productName = TicGameTests;
+			productReference = C505F0642B20CDAE008E1F4B /* TicGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C505F06D2B20CDAE008E1F4B /* TicGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C505F07E2B20CDAE008E1F4B /* Build configuration list for PBXNativeTarget "TicGameUITests" */;
+			buildPhases = (
+				C505F06A2B20CDAE008E1F4B /* Sources */,
+				C505F06B2B20CDAE008E1F4B /* Frameworks */,
+				C505F06C2B20CDAE008E1F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C505F0702B20CDAE008E1F4B /* PBXTargetDependency */,
+			);
+			name = TicGameUITests;
+			productName = TicGameUITests;
+			productReference = C505F06E2B20CDAE008E1F4B /* TicGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C505F04C2B20CDAB008E1F4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C505F0532B20CDAB008E1F4B = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					C505F0632B20CDAE008E1F4B = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = C505F0532B20CDAB008E1F4B;
+					};
+					C505F06D2B20CDAE008E1F4B = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = C505F0532B20CDAB008E1F4B;
+					};
+				};
+			};
+			buildConfigurationList = C505F04F2B20CDAB008E1F4B /* Build configuration list for PBXProject "TicGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C505F04B2B20CDAB008E1F4B;
+			productRefGroup = C505F0552B20CDAB008E1F4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C505F0532B20CDAB008E1F4B /* TicGame */,
+				C505F0632B20CDAE008E1F4B /* TicGameTests */,
+				C505F06D2B20CDAE008E1F4B /* TicGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C505F0522B20CDAB008E1F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C505F05F2B20CDAD008E1F4B /* Preview Assets.xcassets in Resources */,
+				C505F05C2B20CDAD008E1F4B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C505F0622B20CDAE008E1F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C505F06C2B20CDAE008E1F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C505F0502B20CDAB008E1F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C505F05A2B20CDAB008E1F4B /* ContentView.swift in Sources */,
+				C505F0582B20CDAB008E1F4B /* TicGameApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C505F0602B20CDAE008E1F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C505F0692B20CDAE008E1F4B /* TicGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C505F06A2B20CDAE008E1F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C505F0732B20CDAE008E1F4B /* TicGameUITests.swift in Sources */,
+				C505F0752B20CDAE008E1F4B /* TicGameUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C505F0662B20CDAE008E1F4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C505F0532B20CDAB008E1F4B /* TicGame */;
+			targetProxy = C505F0652B20CDAE008E1F4B /* PBXContainerItemProxy */;
+		};
+		C505F0702B20CDAE008E1F4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C505F0532B20CDAB008E1F4B /* TicGame */;
+			targetProxy = C505F06F2B20CDAE008E1F4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C505F0762B20CDAE008E1F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C505F0772B20CDAE008E1F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C505F0792B20CDAE008E1F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TicGame/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app1.TicGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C505F07A2B20CDAE008E1F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TicGame/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app1.TicGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C505F07C2B20CDAE008E1F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app1.TicGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TicGame";
+			};
+			name = Debug;
+		};
+		C505F07D2B20CDAE008E1F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app1.TicGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TicGame";
+			};
+			name = Release;
+		};
+		C505F07F2B20CDAE008E1F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app1.TicGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TicGame;
+			};
+			name = Debug;
+		};
+		C505F0802B20CDAE008E1F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app1.TicGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TicGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C505F04F2B20CDAB008E1F4B /* Build configuration list for PBXProject "TicGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C505F0762B20CDAE008E1F4B /* Debug */,
+				C505F0772B20CDAE008E1F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C505F0782B20CDAE008E1F4B /* Build configuration list for PBXNativeTarget "TicGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C505F0792B20CDAE008E1F4B /* Debug */,
+				C505F07A2B20CDAE008E1F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C505F07B2B20CDAE008E1F4B /* Build configuration list for PBXNativeTarget "TicGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C505F07C2B20CDAE008E1F4B /* Debug */,
+				C505F07D2B20CDAE008E1F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C505F07E2B20CDAE008E1F4B /* Build configuration list for PBXNativeTarget "TicGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C505F07F2B20CDAE008E1F4B /* Debug */,
+				C505F0802B20CDAE008E1F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C505F04C2B20CDAB008E1F4B /* Project object */;
+}
