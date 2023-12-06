@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C505F0582B20CDAB008E1F4B /* TicGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505F0572B20CDAB008E1F4B /* TicGameApp.swift */; };
-		C505F05A2B20CDAB008E1F4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505F0592B20CDAB008E1F4B /* ContentView.swift */; };
+		C505F05A2B20CDAB008E1F4B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505F0592B20CDAB008E1F4B /* HomeView.swift */; };
 		C505F05C2B20CDAD008E1F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C505F05B2B20CDAD008E1F4B /* Assets.xcassets */; };
 		C505F05F2B20CDAD008E1F4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C505F05E2B20CDAD008E1F4B /* Preview Assets.xcassets */; };
 		C505F0692B20CDAE008E1F4B /* TicGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505F0682B20CDAE008E1F4B /* TicGameTests.swift */; };
 		C505F0732B20CDAE008E1F4B /* TicGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505F0722B20CDAE008E1F4B /* TicGameUITests.swift */; };
 		C505F0752B20CDAE008E1F4B /* TicGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505F0742B20CDAE008E1F4B /* TicGameUITestsLaunchTests.swift */; };
+		C54D56562B20D7C3005783E9 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D56552B20D7C3005783E9 /* GameMode.swift */; };
+		C54D56582B20D93B005783E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D56572B20D93B005783E9 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		C505F0542B20CDAB008E1F4B /* TicGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C505F0572B20CDAB008E1F4B /* TicGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicGameApp.swift; sourceTree = "<group>"; };
-		C505F0592B20CDAB008E1F4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C505F0592B20CDAB008E1F4B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C505F05B2B20CDAD008E1F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C505F05E2B20CDAD008E1F4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C505F0642B20CDAE008E1F4B /* TicGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		C505F06E2B20CDAE008E1F4B /* TicGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C505F0722B20CDAE008E1F4B /* TicGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicGameUITests.swift; sourceTree = "<group>"; };
 		C505F0742B20CDAE008E1F4B /* TicGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C54D56552B20D7C3005783E9 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
+		C54D56572B20D93B005783E9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		C505F0562B20CDAB008E1F4B /* TicGame */ = {
 			isa = PBXGroup;
 			children = (
+				C54D56542B20D7AE005783E9 /* Model */,
 				C505F0572B20CDAB008E1F4B /* TicGameApp.swift */,
-				C505F0592B20CDAB008E1F4B /* ContentView.swift */,
+				C54D56572B20D93B005783E9 /* Extensions.swift */,
+				C505F0592B20CDAB008E1F4B /* HomeView.swift */,
 				C505F05B2B20CDAD008E1F4B /* Assets.xcassets */,
 				C505F05D2B20CDAD008E1F4B /* Preview Content */,
 			);
@@ -125,6 +131,14 @@
 				C505F0742B20CDAE008E1F4B /* TicGameUITestsLaunchTests.swift */,
 			);
 			path = TicGameUITests;
+			sourceTree = "<group>";
+		};
+		C54D56542B20D7AE005783E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C54D56552B20D7C3005783E9 /* GameMode.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C505F05A2B20CDAB008E1F4B /* ContentView.swift in Sources */,
+				C505F05A2B20CDAB008E1F4B /* HomeView.swift in Sources */,
 				C505F0582B20CDAB008E1F4B /* TicGameApp.swift in Sources */,
+				C54D56562B20D7C3005783E9 /* GameMode.swift in Sources */,
+				C54D56582B20D93B005783E9 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +443,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,6 +472,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
