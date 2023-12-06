@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
+    //MARK: -Properties
+    @State private var gameMode: GameMode?
     var body: some View {
         VStack {
             main()
+                .fullScreenCover(item: $gameMode){ mode in
+                    GameView(mode: mode)
+                }
         }
         
     }
@@ -41,7 +46,7 @@ extension HomeView {
                 .resizable()
                 .frame(width: 180, height: 180)
             
-            Text("Tic")
+            Text(AppStrings.appName)
                 .font(.largeTitle)
                 .fontWeight(.semibold)
         }
@@ -53,10 +58,13 @@ extension HomeView {
     @ViewBuilder
     private func buttonView() -> some View {
         VStack(spacing: 15){
-            Button {
-                
-            } label: {
-                Text("press")
+            ForEach(GameMode.allCases, id: \.self){ mode in
+                Button{
+                    self.gameMode = mode
+                }label: {
+                    Text(mode.name)
+                }
+                .buttonStyle(.appButton(color: mode.color))
             }
         }
         .padding(.horizontal, 16)

@@ -16,6 +16,8 @@
 		C505F0752B20CDAE008E1F4B /* TicGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C505F0742B20CDAE008E1F4B /* TicGameUITestsLaunchTests.swift */; };
 		C54D56562B20D7C3005783E9 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D56552B20D7C3005783E9 /* GameMode.swift */; };
 		C54D56582B20D93B005783E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D56572B20D93B005783E9 /* Extensions.swift */; };
+		C54D565C2B20E092005783E9 /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D565B2B20E092005783E9 /* AppButtonStyle.swift */; };
+		C54D565E2B20EB42005783E9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D565D2B20EB42005783E9 /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		C505F0742B20CDAE008E1F4B /* TicGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C54D56552B20D7C3005783E9 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
 		C54D56572B20D93B005783E9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C54D565B2B20E092005783E9 /* AppButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
+		C54D565D2B20EB42005783E9 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +102,12 @@
 		C505F0562B20CDAB008E1F4B /* TicGame */ = {
 			isa = PBXGroup;
 			children = (
+				C54D565A2B20E041005783E9 /* Styles */,
+				C54D56592B20DFFF005783E9 /* Extensions */,
 				C54D56542B20D7AE005783E9 /* Model */,
 				C505F0572B20CDAB008E1F4B /* TicGameApp.swift */,
-				C54D56572B20D93B005783E9 /* Extensions.swift */,
 				C505F0592B20CDAB008E1F4B /* HomeView.swift */,
+				C54D565D2B20EB42005783E9 /* GameView.swift */,
 				C505F05B2B20CDAD008E1F4B /* Assets.xcassets */,
 				C505F05D2B20CDAD008E1F4B /* Preview Content */,
 			);
@@ -139,6 +145,22 @@
 				C54D56552B20D7C3005783E9 /* GameMode.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C54D56592B20DFFF005783E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C54D56572B20D93B005783E9 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C54D565A2B20E041005783E9 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				C54D565B2B20E092005783E9 /* AppButtonStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +296,8 @@
 				C505F05A2B20CDAB008E1F4B /* HomeView.swift in Sources */,
 				C505F0582B20CDAB008E1F4B /* TicGameApp.swift in Sources */,
 				C54D56562B20D7C3005783E9 /* GameMode.swift in Sources */,
+				C54D565C2B20E092005783E9 /* AppButtonStyle.swift in Sources */,
+				C54D565E2B20EB42005783E9 /* GameView.swift in Sources */,
 				C54D56582B20D93B005783E9 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
