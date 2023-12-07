@@ -13,8 +13,8 @@ struct HomeView: View {
     var body: some View {
         VStack {
             main()
-                .fullScreenCover(item: $gameMode){ mode in
-                    GameView(mode: mode)
+                .fullScreenCover(item: $gameMode){ gameMode in
+                    GameView(viewModel: GameViewModel(gameMode: gameMode))
                 }
         }
         
