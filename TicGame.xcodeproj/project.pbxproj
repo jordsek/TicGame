@@ -21,6 +21,8 @@
 		C54D56582B20D93B005783E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D56572B20D93B005783E9 /* Extensions.swift */; };
 		C54D565C2B20E092005783E9 /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D565B2B20E092005783E9 /* AppButtonStyle.swift */; };
 		C54D565E2B20EB42005783E9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D565D2B20EB42005783E9 /* GameView.swift */; };
+		C5EA00A02B235DBE00544CA7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EA009F2B235DBE00544CA7 /* Player.swift */; };
+		C5EA00A22B236DC900544CA7 /* GameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EA00A12B236DC900544CA7 /* GameMove.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		C54D56572B20D93B005783E9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C54D565B2B20E092005783E9 /* AppButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
 		C54D565D2B20EB42005783E9 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		C5EA009F2B235DBE00544CA7 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C5EA00A12B236DC900544CA7 /* GameMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMove.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				C54D56552B20D7C3005783E9 /* GameMode.swift */,
+				C5EA009F2B235DBE00544CA7 /* Player.swift */,
+				C5EA00A12B236DC900544CA7 /* GameMove.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C505F05A2B20CDAB008E1F4B /* HomeView.swift in Sources */,
+				C5EA00A22B236DC900544CA7 /* GameMove.swift in Sources */,
 				C505F0582B20CDAB008E1F4B /* TicGameApp.swift in Sources */,
 				C54D56562B20D7C3005783E9 /* GameMode.swift in Sources */,
 				C54D565C2B20E092005783E9 /* AppButtonStyle.swift in Sources */,
@@ -334,6 +341,7 @@
 				C50B60FA2B22108D0001B0ED /* BoardCircleView.swift in Sources */,
 				C54D56582B20D93B005783E9 /* Extensions.swift in Sources */,
 				C50B60FD2B2217590001B0ED /* BoardIndicatorView.swift in Sources */,
+				C5EA00A02B235DBE00544CA7 /* Player.swift in Sources */,
 				C50B60F82B22027E0001B0ED /* GameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

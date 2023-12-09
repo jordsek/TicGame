@@ -13,6 +13,9 @@ struct AppStrings{
     static let online = "Online"
     static let appName = "Tic"
     static let exit = "Exit"
+    static let player1 = "Player 1"
+    static let player2 = "Player 2"
+    static let computer = "Computer"
 
     
 }
