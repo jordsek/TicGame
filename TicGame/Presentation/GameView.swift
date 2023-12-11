@@ -77,7 +77,7 @@ extension GameView {
     private func gameStatus() -> some View {
         VStack{
             VStack {
-                Text("We are in \(viewModel.gameMode.name)")
+                Text("Game status")
                     .font(.title2)
             }
             .foregroundStyle(.white)
@@ -92,7 +92,10 @@ extension GameView {
                 ForEach(0..<9) { index in
                     ZStack{
                         BoardCircleView(geometry: geometry)
-                        BoardIndicatorView(imageName: "")
+                        BoardIndicatorView(imageName: viewModel.moves[index]?.indicator ?? "")
+                    }
+                    .onTapGesture {
+                        viewModel.processMove(for: index)
                     }
                 }
             }
