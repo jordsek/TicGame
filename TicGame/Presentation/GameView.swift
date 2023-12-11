@@ -16,11 +16,16 @@ struct GameView: View {
     
     var body: some View {
      main()
+            .alert(isPresented: $viewModel.showAlert){
+                Alert(title: viewModel.alertItem!.title, message: viewModel.alertItem!.message, dismissButton: .default(viewModel.alertItem!.buttonTitle){
+                    viewModel.resetGame()
+                })
+            }
     }
 }
 
 #Preview {
-    GameView(viewModel: GameViewModel(gameMode: .vsCPU))
+    GameView(viewModel: GameViewModel(gameMode: .vsHuman))
 }
 
 extension GameView {
@@ -64,9 +69,9 @@ extension GameView {
     @ViewBuilder
     private func scoreView() -> some View {
         HStack{
-            Text("Player 1 : 0")
+            Text("\(viewModel.player1Name): \(viewModel.player1Score)")
             Spacer()
-            Text("Player 2 : 0")
+            Text("\(viewModel.player2Name): \(viewModel.player2Score)")
         }
         .foregroundStyle(.white)
         .font(.title2)
@@ -77,7 +82,7 @@ extension GameView {
     private func gameStatus() -> some View {
         VStack{
             VStack {
-                Text("Game status")
+                Text(viewModel.gameNottification)
                     .font(.title2)
             }
             .foregroundStyle(.white)
@@ -101,5 +106,6 @@ extension GameView {
             }
         }
         .padding(.bottom, 10)
+        .disabled(viewModel.isGameBoardDisbled)
     }
 }

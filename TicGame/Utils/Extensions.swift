@@ -16,6 +16,12 @@ struct AppStrings{
     static let player1 = "Player 1"
     static let player2 = "Player 2"
     static let computer = "Computer"
+    static let rematch = "Rematch"
+    static let gameFinished = "The game is finished"
+    static let draw = "It's a draw"
+    static let playerLeft = "player left the game"
+    static let waitingForPLayer = "waiting of player to join"
+    static let tryRematch = "Try rematch"
 
     
 }

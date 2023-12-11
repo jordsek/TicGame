@@ -21,6 +21,8 @@
 		C54D56582B20D93B005783E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D56572B20D93B005783E9 /* Extensions.swift */; };
 		C54D565C2B20E092005783E9 /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D565B2B20E092005783E9 /* AppButtonStyle.swift */; };
 		C54D565E2B20EB42005783E9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D565D2B20EB42005783E9 /* GameView.swift */; };
+		C5B6AD012B274E9B00D6340E /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B6AD002B274E9B00D6340E /* AlertItem.swift */; };
+		C5B6AD032B27585F00D6340E /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B6AD022B27585F00D6340E /* GameState.swift */; };
 		C5EA00A02B235DBE00544CA7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EA009F2B235DBE00544CA7 /* Player.swift */; };
 		C5EA00A22B236DC900544CA7 /* GameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EA00A12B236DC900544CA7 /* GameMove.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +62,8 @@
 		C54D56572B20D93B005783E9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C54D565B2B20E092005783E9 /* AppButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
 		C54D565D2B20EB42005783E9 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		C5B6AD002B274E9B00D6340E /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		C5B6AD022B27585F00D6340E /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		C5EA009F2B235DBE00544CA7 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C5EA00A12B236DC900544CA7 /* GameMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMove.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +194,8 @@
 				C54D56552B20D7C3005783E9 /* GameMode.swift */,
 				C5EA009F2B235DBE00544CA7 /* Player.swift */,
 				C5EA00A12B236DC900544CA7 /* GameMove.swift */,
+				C5B6AD002B274E9B00D6340E /* AlertItem.swift */,
+				C5B6AD022B27585F00D6340E /* GameState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,6 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C505F05A2B20CDAB008E1F4B /* HomeView.swift in Sources */,
+				C5B6AD012B274E9B00D6340E /* AlertItem.swift in Sources */,
+				C5B6AD032B27585F00D6340E /* GameState.swift in Sources */,
 				C5EA00A22B236DC900544CA7 /* GameMove.swift in Sources */,
 				C505F0582B20CDAB008E1F4B /* TicGameApp.swift in Sources */,
 				C54D56562B20D7C3005783E9 /* GameMode.swift in Sources */,
