@@ -17,6 +17,7 @@ final class OnlineGameRepository: ObservableObject {
     
     private var cancellables: Set<AnyCancellable> = []
     
+    @MainActor
     func joinGame() async {
         if let gamesToJoin: Game = await getGame(){
             
@@ -33,6 +34,7 @@ final class OnlineGameRepository: ObservableObject {
         }
     }
     
+    @MainActor
     private func createNewGame() async {
         self.game = Game(id: UUID().uuidString,
                          player1Id: localPlayerId,
@@ -46,7 +48,7 @@ final class OnlineGameRepository: ObservableObject {
         await self.updateGame(self.game)
     }
     
-    
+    @MainActor
     private func listenForChanges(in gameId: String) async {
         do {
             try await firebaseRepository.listen(from: .Game, documentId: gameId)

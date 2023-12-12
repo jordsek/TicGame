@@ -75,7 +75,7 @@ final class GameViewModel: ObservableObject{
         gameNottification = AppStrings.waitingForPLayer
         //show loading
         Task {
-            await onlineRepository.joinGame
+            await onlineRepository.joinGame()
         }
     }
     
