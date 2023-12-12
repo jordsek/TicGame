@@ -12,8 +12,8 @@ struct Game: Codable, Identifiable {
     
     var player1Id: String
     var player2Id: String
-    var player1Score: String
-    var player2Score: String
+    var player1Score: Int
+    var player2Score: Int
     
     var activePlayerId: String
     var winningPLayerId: String

@@ -22,6 +22,9 @@ struct AppStrings{
     static let playerLeft = "player left the game"
     static let waitingForPLayer = "waiting of player to join"
     static let tryRematch = "Try rematch"
+}
 
-    
+struct Constants {
+    static let player1Id = "player1Id"
+    static let player2Id = "player1Id"
 }
