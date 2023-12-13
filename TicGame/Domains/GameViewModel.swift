@@ -34,11 +34,13 @@ final class GameViewModel: ObservableObject{
     @Published private(set) var alertItem: AlertItem?
     @Published private(set) var isGameBoardDisbled = false
     @Published private(set) var onlineGame: Game?
+    @Published private(set) var showLoading = false
+    
     
     @Published private var players: [Player]
     @Published var showAlert = false
     
-    
+    private var cancellables: Set<AnyCancellable> = []
     
     init(gameMode: GameMode) {
         self.gameMode = gameMode
@@ -69,11 +71,37 @@ final class GameViewModel: ObservableObject{
         onlineRepository.$game
             .map { $0 }
             .assign(to: &$onlineGame)
+        
+        $onlineGame
+            .map { $0?.moves ?? Array(repeating: nil, count: 9)}
+            .assign(to: &$moves)
+        
+        $onlineGame
+            .map { $0?.player1Score ?? 0}
+            .assign(to: &$player1Score)
+        
+        $onlineGame
+            .map { $0?.player2Score ?? 0}
+            .assign(to: &$player2Score)
+        
+        $onlineGame
+            .drop(while: { $0 == nil })
+            .map { $0?.player2Id == "" }
+            .assign(to: &$showLoading)
+        
+        $onlineGame
+            .drop(while: { $0 == nil })
+            .sink { updatedGame in
+                self.syncOnlineWithLocal(onlineGame: updatedGame)
+            }
+            .store(in: &cancellables)
+    }
+    
+    private func syncOnlineWithLocal(onlineGame: Game?){
+        print("the game was updated", onlineGame?.player2Id)
     }
     
     private func startOnlineGame() {
-        gameNottification = AppStrings.waitingForPLayer
-        //show loading
         Task {
             await onlineRepository.joinGame()
         }
