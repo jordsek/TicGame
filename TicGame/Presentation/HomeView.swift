@@ -14,7 +14,7 @@ struct HomeView: View {
         VStack {
             main()
                 .fullScreenCover(item: $gameMode){ gameMode in
-                    GameView(viewModel: GameViewModel(gameMode: gameMode))
+                    GameView(viewModel: GameViewModel(gameMode: gameMode, onlineGameRepository: OnlineGameRepository()))
                 }
         }
         

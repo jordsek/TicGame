@@ -17,10 +17,12 @@
 		C50B60F82B22027E0001B0ED /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50B60F72B22027E0001B0ED /* GameViewModel.swift */; };
 		C50B60FA2B22108D0001B0ED /* BoardCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50B60F92B22108D0001B0ED /* BoardCircleView.swift */; };
 		C50B60FD2B2217590001B0ED /* BoardIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50B60FC2B2217590001B0ED /* BoardIndicatorView.swift */; };
+		C516C9742B2A006E008715D1 /* GameProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C516C9732B2A006E008715D1 /* GameProcess.swift */; };
 		C5348FF12B28A5C500F1826C /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5348FF02B28A5C500F1826C /* AppError.swift */; };
 		C5348FF32B28AA9800F1826C /* OnlineGameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5348FF22B28AA9800F1826C /* OnlineGameRepository.swift */; };
 		C5348FF62B28B40D00F1826C /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = C5348FF52B28B40D00F1826C /* Factory */; };
 		C5348FF82B28B44400F1826C /* ServiceDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5348FF72B28B44400F1826C /* ServiceDependencies.swift */; };
+		C541A08E2B30952C007A0CAF /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C541A08D2B30952C007A0CAF /* FirebaseFirestoreSwift */; };
 		C54D56562B20D7C3005783E9 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D56552B20D7C3005783E9 /* GameMode.swift */; };
 		C54D56582B20D93B005783E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D56572B20D93B005783E9 /* Extensions.swift */; };
 		C54D565C2B20E092005783E9 /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D565B2B20E092005783E9 /* AppButtonStyle.swift */; };
@@ -68,6 +70,7 @@
 		C50B60F72B22027E0001B0ED /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		C50B60F92B22108D0001B0ED /* BoardCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCircleView.swift; sourceTree = "<group>"; };
 		C50B60FC2B2217590001B0ED /* BoardIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardIndicatorView.swift; sourceTree = "<group>"; };
+		C516C9732B2A006E008715D1 /* GameProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProcess.swift; sourceTree = "<group>"; };
 		C5348FF02B28A5C500F1826C /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		C5348FF22B28AA9800F1826C /* OnlineGameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameRepository.swift; sourceTree = "<group>"; };
 		C5348FF72B28B44400F1826C /* ServiceDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDependencies.swift; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C541A08E2B30952C007A0CAF /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +124,7 @@
 				C505F0672B20CDAE008E1F4B /* TicGameTests */,
 				C505F0712B20CDAE008E1F4B /* TicGameUITests */,
 				C505F0552B20CDAB008E1F4B /* Products */,
+				C541A08C2B30952C007A0CAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +215,13 @@
 			path = ViewComponents;
 			sourceTree = "<group>";
 		};
+		C541A08C2B30952C007A0CAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C54D56542B20D7AE005783E9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +233,7 @@
 				C5940E7F2B278244005306EF /* Game.swift */,
 				C5940E812B278AB0005306EF /* GoogleService-Info.plist */,
 				C5348FF02B28A5C500F1826C /* AppError.swift */,
+				C516C9732B2A006E008715D1 /* GameProcess.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +295,9 @@
 				C505F0662B20CDAE008E1F4B /* PBXTargetDependency */,
 			);
 			name = TicGameTests;
+			packageProductDependencies = (
+				C541A08D2B30952C007A0CAF /* FirebaseFirestoreSwift */,
+			);
 			productName = TicGameTests;
 			productReference = C505F0642B20CDAE008E1F4B /* TicGameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -392,6 +408,7 @@
 				C5348FF32B28AA9800F1826C /* OnlineGameRepository.swift in Sources */,
 				C5EA00A22B236DC900544CA7 /* GameMove.swift in Sources */,
 				C505F0582B20CDAB008E1F4B /* TicGameApp.swift in Sources */,
+				C516C9742B2A006E008715D1 /* GameProcess.swift in Sources */,
 				C54D56562B20D7C3005783E9 /* GameMode.swift in Sources */,
 				C54D565C2B20E092005783E9 /* AppButtonStyle.swift in Sources */,
 				C5348FF82B28B44400F1826C /* ServiceDependencies.swift in Sources */,
@@ -752,6 +769,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C5348FF42B28B40D00F1826C /* XCRemoteSwiftPackageReference "Factory" */;
 			productName = Factory;
+		};
+		C541A08D2B30952C007A0CAF /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5940E832B279362005306EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 		C5940E842B279362005306EF /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;

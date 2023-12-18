@@ -25,7 +25,8 @@ struct GameView: View {
 }
 
 #Preview {
-    GameView(viewModel: GameViewModel(gameMode: .vsHuman))
+    GameView(viewModel: GameViewModel(gameMode: .vsHuman, onlineGameRepository: OnlineGameRepository()))
+    
 }
 
 extension GameView {
@@ -52,6 +53,7 @@ extension GameView {
         HStack{
             Spacer()
             Button {
+                viewModel.quitTheGame()
                 dismiss()
             } label: {
                 Text(AppStrings.exit)
@@ -84,6 +86,11 @@ extension GameView {
             VStack {
                 Text(viewModel.gameNottification)
                     .font(.title2)
+                if viewModel.showLoading {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .tint(.white)
+                }
             }
             .foregroundStyle(.white)
             //.background(Color.pink)
