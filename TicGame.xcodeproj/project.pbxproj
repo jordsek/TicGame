@@ -35,6 +35,9 @@
 		C5940E8C2B279C3A005306EF /* FirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5940E8B2B279C3A005306EF /* FirebaseRepository.swift */; };
 		C5B6AD012B274E9B00D6340E /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B6AD002B274E9B00D6340E /* AlertItem.swift */; };
 		C5B6AD032B27585F00D6340E /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B6AD022B27585F00D6340E /* GameState.swift */; };
+		C5CDA8E12B33354500EEF82F /* MockFirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CDA8E02B33354500EEF82F /* MockFirebaseRepository.swift */; };
+		C5CDA8E32B333AC000EEF82F /* FactorySetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CDA8E22B333AC000EEF82F /* FactorySetup.swift */; };
+		C5CDA8E72B333DD700EEF82F /* OnlineGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CDA8E62B333DD700EEF82F /* OnlineGameTest.swift */; };
 		C5EA00A02B235DBE00544CA7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EA009F2B235DBE00544CA7 /* Player.swift */; };
 		C5EA00A22B236DC900544CA7 /* GameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EA00A12B236DC900544CA7 /* GameMove.swift */; };
 /* End PBXBuildFile section */
@@ -84,6 +87,9 @@
 		C5940E8B2B279C3A005306EF /* FirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRepository.swift; sourceTree = "<group>"; };
 		C5B6AD002B274E9B00D6340E /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		C5B6AD022B27585F00D6340E /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		C5CDA8E02B33354500EEF82F /* MockFirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFirebaseRepository.swift; sourceTree = "<group>"; };
+		C5CDA8E22B333AC000EEF82F /* FactorySetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorySetup.swift; sourceTree = "<group>"; };
+		C5CDA8E62B333DD700EEF82F /* OnlineGameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameTest.swift; sourceTree = "<group>"; };
 		C5EA009F2B235DBE00544CA7 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C5EA00A12B236DC900544CA7 /* GameMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMove.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				C505F0682B20CDAE008E1F4B /* TicGameTests.swift */,
+				C5CDA8E22B333AC000EEF82F /* FactorySetup.swift */,
+				C5CDA8E62B333DD700EEF82F /* OnlineGameTest.swift */,
 			);
 			path = TicGameTests;
 			sourceTree = "<group>";
@@ -252,6 +260,7 @@
 				C5940E892B279618005306EF /* FBCollectionReference.swift */,
 				C5940E8B2B279C3A005306EF /* FirebaseRepository.swift */,
 				C5348FF22B28AA9800F1826C /* OnlineGameRepository.swift */,
+				C5CDA8E02B33354500EEF82F /* MockFirebaseRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -417,6 +426,7 @@
 				C5940E802B278244005306EF /* Game.swift in Sources */,
 				C54D56582B20D93B005783E9 /* Extensions.swift in Sources */,
 				C50B60FD2B2217590001B0ED /* BoardIndicatorView.swift in Sources */,
+				C5CDA8E12B33354500EEF82F /* MockFirebaseRepository.swift in Sources */,
 				C5EA00A02B235DBE00544CA7 /* Player.swift in Sources */,
 				C50B60F82B22027E0001B0ED /* GameViewModel.swift in Sources */,
 			);
@@ -426,7 +436,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5CDA8E32B333AC000EEF82F /* FactorySetup.swift in Sources */,
 				C505F0692B20CDAE008E1F4B /* TicGameTests.swift in Sources */,
+				C5CDA8E72B333DD700EEF82F /* OnlineGameTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
